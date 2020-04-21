@@ -1,0 +1,162 @@
+{
+    "United_States_of_America": {
+        "deaths": 42539,
+        "cases": 787752,
+        "mortality_rate": 5.4,
+        "infection_rate": 0.24,
+        "2018population": "327,167,434",
+        "dateRep": "21/04/2020"
+    },
+    "Italy": {
+        "deaths": 24114,
+        "cases": 181228,
+        "mortality_rate": 13.31,
+        "infection_rate": 0.3,
+        "2018population": "60,431,283",
+        "dateRep": "21/04/2020"
+    },
+    "Spain": {
+        "deaths": 20852,
+        "cases": 200210,
+        "mortality_rate": 10.42,
+        "infection_rate": 0.43,
+        "2018population": "46,723,749",
+        "dateRep": "21/04/2020"
+    },
+    "France": {
+        "deaths": 20265,
+        "cases": 114657,
+        "mortality_rate": 17.67,
+        "infection_rate": 0.17,
+        "2018population": "66,987,244",
+        "dateRep": "21/04/2020"
+    },
+    "United_Kingdom": {
+        "deaths": 16509,
+        "cases": 124743,
+        "mortality_rate": 13.23,
+        "infection_rate": 0.19,
+        "2018population": "66,488,991",
+        "dateRep": "21/04/2020"
+    },
+    "Belgium": {
+        "deaths": 5828,
+        "cases": 39983,
+        "mortality_rate": 14.58,
+        "infection_rate": 0.35,
+        "2018population": "11,422,068",
+        "dateRep": "21/04/2020"
+    },
+    "Iran": {
+        "deaths": 5209,
+        "cases": 83505,
+        "mortality_rate": 6.24,
+        "infection_rate": 0.1,
+        "2018population": "81,800,269",
+        "dateRep": "21/04/2020"
+    },
+    "China": {
+        "deaths": 4636,
+        "cases": 83849,
+        "mortality_rate": 5.53,
+        "infection_rate": 0.01,
+        "2018population": "1,392,730,000",
+        "dateRep": "21/04/2020"
+    },
+    "Germany": {
+        "deaths": 4598,
+        "cases": 143457,
+        "mortality_rate": 3.21,
+        "infection_rate": 0.17,
+        "2018population": "82,927,922",
+        "dateRep": "21/04/2020"
+    },
+    "Netherlands": {
+        "deaths": 3751,
+        "cases": 33405,
+        "mortality_rate": 11.23,
+        "infection_rate": 0.19,
+        "2018population": "17,231,017",
+        "dateRep": "21/04/2020"
+    },
+    "Brazil": {
+        "deaths": 2575,
+        "cases": 40581,
+        "mortality_rate": 6.35,
+        "infection_rate": 0.02,
+        "2018population": "209,469,333",
+        "dateRep": "21/04/2020"
+    },
+    "Turkey": {
+        "deaths": 2140,
+        "cases": 90980,
+        "mortality_rate": 2.35,
+        "infection_rate": 0.11,
+        "2018population": "82,319,724",
+        "dateRep": "21/04/2020"
+    },
+    "Canada": {
+        "deaths": 1690,
+        "cases": 36823,
+        "mortality_rate": 4.59,
+        "infection_rate": 0.1,
+        "2018population": "37,058,856",
+        "dateRep": "21/04/2020"
+    },
+    "Sweden": {
+        "deaths": 1580,
+        "cases": 14777,
+        "mortality_rate": 10.69,
+        "infection_rate": 0.15,
+        "2018population": "10,183,175",
+        "dateRep": "21/04/2020"
+    },
+    "Switzerland": {
+        "deaths": 1141,
+        "cases": 27826,
+        "mortality_rate": 4.1,
+        "infection_rate": 0.33,
+        "2018population": "8,516,543",
+        "dateRep": "21/04/2020"
+    },
+    "Portugal": {
+        "deaths": 735,
+        "cases": 20863,
+        "mortality_rate": 3.52,
+        "infection_rate": 0.2,
+        "2018population": "10,281,762",
+        "dateRep": "21/04/2020"
+    },
+    "Mexico": {
+        "deaths": 712,
+        "cases": 8772,
+        "mortality_rate": 8.12,
+        "infection_rate": 0.01,
+        "2018population": "126,190,788",
+        "dateRep": "21/04/2020"
+    },
+    "Ireland": {
+        "deaths": 687,
+        "cases": 15652,
+        "mortality_rate": 4.39,
+        "infection_rate": 0.32,
+        "2018population": "4,853,506",
+        "dateRep": "21/04/2020"
+    },
+    "India": {
+        "deaths": 590,
+        "cases": 18600,
+        "mortality_rate": 3.17,
+        "infection_rate": 0.0,
+        "2018population": "1,352,617,328",
+        "dateRep": "21/04/2020"
+    },
+    "Indonesia": {
+        "deaths": 590,
+        "cases": 6760,
+        "mortality_rate": 8.73,
+        "infection_rate": 0.0,
+        "2018population": "267,663,435",
+        "dateRep": "21/04/2020"
+    }
+}
