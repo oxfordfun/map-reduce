@@ -4,7 +4,7 @@ We use MapReduce design patterns to analyze Covid19 data.
 ### Get Started
 1. Get code
 ```bash
-   git clone https://github.com/oxfordfun/map_reduce
+   git clone https://github.com/oxfordfun/map-reduce
 ```
 2. Get data
 ```bash
@@ -13,8 +13,9 @@ We use MapReduce design patterns to analyze Covid19 data.
 ```
 3. Run script
 ```bash
-   python3 covid19/main.py data/covid19.json
+   python3 covid19/main.py data/covid19.json > data/output.json
 ```
+4. Examine the output (data/output.json)
 
 ### Dataset
 Covid19 - [ECDC](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide)
