@@ -1,5 +1,20 @@
-# MapReduce Design Patterns with Covid19 data
-In this repo we use MapReduce design patterns to analyze Covid19 data. 
+## MapReduce Design Patterns with Covid19 data
+We use MapReduce design patterns to analyze Covid19 data. 
+
+### Get Started
+1. Get code
+```bash
+   git clone https://github.com/oxfordfun/map_reduce
+```
+2. Get data
+```bash
+   cd map_reduce
+   wget https://opendata.ecdc.europa.eu/covid19/casedistribution/json/ -O data/covid19.json
+```
+3. Run script
+```bash
+   python3 covid19/main.py data/covid19.json
+```
 
 ### Dataset
 Covid19 - [ECDC](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide)
