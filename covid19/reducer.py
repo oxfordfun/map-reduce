@@ -28,12 +28,14 @@ class Reducer:
         counts['dateRep'] = day.strftime("%d/%m/%Y")
         return counts
       
-    def sort(self, data):
+    def sort(self, data,n):
         '''
         sort data (a dictionary) based on values descending
         '''
         sorted_data = {k: v for k, v in sorted(data.items(), key=lambda item: item[1], reverse=True)}
-        return list(sorted_data.items())
+        list_sorted_data = list(sorted_data.items())[:n]
+
+        return dict(list_sorted_data)
 
     def get_country_stats(self, country_record):
         '''

@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 # download covid19 data: wget https://opendata.ecdc.europa.eu/covid19/casedistribution/json/ -O data/covid19.json
-# python3 covid19/main.py data/main.json > data/output.json
+# python3 covid19/main.py data/covid19.json > data/output.json
 
 import sys
 import json
@@ -27,14 +27,14 @@ if __name__ == "__main__":
 
     # sort the data
     final_result = {}
-    sorted_deaths = reducer.sort(country_deaths_counts)
-    final_result['Top_Deaths'] = sorted_deaths[:10]
-    sorted_cases = reducer.sort(country_cases_counts)
-    final_result['Top_Cases'] = sorted_cases[:10]
-    sorted_infection = reducer.sort(country_infection_counts)
-    final_result['Top_Infection'] = sorted_infection[:10]
-    sorted_mortality = reducer.sort(country_mortality_counts)
-    final_result['Top_Mortality'] = sorted_mortality[:10]
+    sorted_deaths = reducer.sort(country_deaths_counts, 10)
+    final_result['Top_Deaths'] = sorted_deaths
+    sorted_cases = reducer.sort(country_cases_counts,10)
+    final_result['Top_Cases'] = sorted_cases
+    sorted_infection = reducer.sort(country_infection_counts,10)
+    final_result['Top_Infection'] = sorted_infection
+    sorted_mortality = reducer.sort(country_mortality_counts,10)
+    final_result['Top_Mortality'] = sorted_mortality
 
     output_json = json.dumps(final_result, indent=4)
     print(output_json)
