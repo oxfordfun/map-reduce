@@ -1,0 +1,50 @@
+{
+    "Top_Deaths": {
+        "United_States_of_America": 42539,
+        "Brazil": 2575,
+        "Canada": 1690,
+        "Mexico": 712,
+        "Ecuador": 507,
+        "Peru": 445,
+        "Dominican_Republic": 235,
+        "Colombia": 189,
+        "Argentina": 142,
+        "Chile": 139
+    },
+    "Top_Cases": {
+        "United_States_of_America": 787752,
+        "Brazil": 40581,
+        "Canada": 36823,
+        "Peru": 16325,
+        "Chile": 10507,
+        "Ecuador": 10128,
+        "Mexico": 8772,
+        "Dominican_Republic": 4964,
+        "Panama": 4658,
+        "Colombia": 3977
+    },
+    "Top_Infection": {
+        "United_States_of_America": 0.24,
+        "Montserrat": 0.19,
+        "Sint_Maarten": 0.16,
+        "Bermuda": 0.13,
+        "Panama": 0.11,
+        "Canada": 0.1,
+        "Cayman_Islands": 0.1,
+        "Aruba": 0.09,
+        "Chile": 0.06,
+        "Ecuador": 0.06
+    },
+    "Top_Mortality": {
+        "British_Virgin_Islands": 20.0,
+        "Nicaragua": 15.38,
+        "Sint_Maarten": 14.71,
+        "Bahamas": 14.06,
+        "Antigua_and_Barbuda": 13.04,
+        "Belize": 11.11,
+        "Guyana": 10.61,
+        "Suriname": 10.0,
+        "Honduras": 9.31,
+        "Turks_and_Caicos_islands": 9.09
+    }
+}

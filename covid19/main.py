@@ -1,6 +1,11 @@
 #! /usr/bin/env python3
 # download covid19 data: wget https://opendata.ecdc.europa.eu/covid19/casedistribution/json/ -O data/covid19.json
-# python3 covid19/main.py data/covid19.json > data/output.json
+# python3 covid19/main.py data/covid19.json All > /data/world.json
+# python3 covid19/main.py data/covid19.json Europe > /data/europe.json
+# python3 covid19/main.py data/covid19.json Asia > /data/asia.json
+# python3 covid19/main.py data/covid19.json Oceania > /data/australia.json
+# python3 covid19/main.py data/covid19.json Africa > /data/africa.json
+# python3 covid19/main.py data/covid19.json America > /data/ameirca.json
 
 import sys
 import json
@@ -10,7 +15,12 @@ from reducer import Reducer
 
 
 if __name__ == "__main__":
-    input_file = sys.argv[1]
+    if sys.argv[1]:
+        input_file = sys.argv[1]
+    else:
+        print("data file needed")
+        exit()
+
     with open(input_file) as reader:
         all_data = json.loads(reader.read())
         data = all_data['records']
@@ -18,7 +28,11 @@ if __name__ == "__main__":
     # mapped to country
 
     mapper = Mapper()
-    country_data = mapper.map_continent(data,'Europe')
+    if sys.argv[2]:
+        query_continent = sys.argv[2]
+        country_data = mapper.map_continent(data, query_continent)
+    else:
+        country_data = mapper.map_continent(data,"all")
     
     # get stats of each country
     reducer = Reducer()
@@ -37,4 +51,5 @@ if __name__ == "__main__":
     final_result['Top_Mortality'] = sorted_mortality
 
     output_json = json.dumps(final_result, indent=4)
+
     print(output_json)

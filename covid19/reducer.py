@@ -3,7 +3,16 @@
 class Reducer:
     def count_country(self,records):
         '''
-        Count data for one country
+        input: 
+        records - [{country-daily-record}*]
+
+        output:
+        counts - {'deaths': number-of-death, 
+                  'cases': number-of-cases, 
+                  'mortality': number-of-mortality, 
+                  'infection': infection-rate, 
+                  'population': population, 
+                  }
         '''
         import datetime
         counts = {}
@@ -26,6 +35,7 @@ class Reducer:
         counts['infection'] = round(counts['cases'] / population * 100 ,2)
         counts['population'] = population #'{:,}'.format(population)
         counts['dateRep'] = day.strftime("%d/%m/%Y")
+        
         return counts
       
     def sort(self, data,n):

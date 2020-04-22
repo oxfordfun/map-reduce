@@ -1,0 +1,50 @@
+{
+    "Top_Deaths": {
+        "Algeria": 384,
+        "Egypt": 250,
+        "Morocco": 143,
+        "South_Africa": 58,
+        "Cameroon": 42,
+        "Burkina_Faso": 38,
+        "Tunisia": 38,
+        "Democratic_Republic_of_the_Congo": 25,
+        "Nigeria": 22,
+        "Niger": 20
+    },
+    "Top_Cases": {
+        "Egypt": 3333,
+        "South_Africa": 3300,
+        "Morocco": 3046,
+        "Algeria": 2718,
+        "Ghana": 1042,
+        "Cameroon": 1017,
+        "Tunisia": 884,
+        "Cote_dIvoire": 879,
+        "Djibouti": 846,
+        "Nigeria": 665
+    },
+    "Top_Infection": {
+        "Djibouti": 0.09,
+        "Mauritius": 0.03,
+        "Algeria": 0.01,
+        "Cape_Verde": 0.01,
+        "Equatorial_Guinea": 0.01,
+        "Gabon": 0.01,
+        "Guinea": 0.01,
+        "Morocco": 0.01,
+        "Seychelles": 0.01,
+        "South_Africa": 0.01
+    },
+    "Top_Mortality": {
+        "Burundi": 16.67,
+        "Mauritania": 14.29,
+        "Algeria": 14.13,
+        "Sudan": 13.04,
+        "Zimbabwe": 12.0,
+        "Malawi": 11.76,
+        "Gambia": 10.0,
+        "Angola": 8.33,
+        "Liberia": 8.08,
+        "Egypt": 7.5
+    }
+}

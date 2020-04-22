@@ -1,0 +1,50 @@
+{
+    "Top_Deaths": {
+        "Iran": 5209,
+        "China": 4636,
+        "Turkey": 2140,
+        "India": 590,
+        "Indonesia": 590,
+        "Philippines": 428,
+        "South_Korea": 237,
+        "Pakistan": 192,
+        "Japan": 186,
+        "Israel": 177
+    },
+    "Top_Cases": {
+        "Turkey": 90980,
+        "China": 83849,
+        "Iran": 83505,
+        "India": 18600,
+        "Israel": 13713,
+        "Japan": 11118,
+        "South_Korea": 10683,
+        "Saudi_Arabia": 10484,
+        "Pakistan": 9216,
+        "United_Arab_Emirates": 7265
+    },
+    "Top_Infection": {
+        "Qatar": 0.22,
+        "Israel": 0.15,
+        "Bahrain": 0.12,
+        "Singapore": 0.12,
+        "Turkey": 0.11,
+        "Iran": 0.1,
+        "United_Arab_Emirates": 0.08,
+        "Kuwait": 0.05,
+        "Brunei_Darussalam": 0.03,
+        "Oman": 0.03
+    },
+    "Top_Mortality": {
+        "Indonesia": 8.73,
+        "Syria": 7.69,
+        "Philippines": 6.63,
+        "Iran": 6.24,
+        "China": 5.53,
+        "Iraq": 5.21,
+        "Myanmar": 4.2,
+        "Bangladesh": 3.43,
+        "Afghanistan": 3.39,
+        "India": 3.17
+    }
+}

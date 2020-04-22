@@ -1,0 +1,42 @@
+{
+    "Top_Deaths": {
+        "Australia": 71,
+        "New_Zealand": 13,
+        "Guam": 5,
+        "Northern_Mariana_Islands": 2,
+        "Fiji": 0,
+        "French_Polynesia": 0,
+        "New_Caledonia": 0,
+        "Papua_New_Guinea": 0
+    },
+    "Top_Cases": {
+        "Australia": 6625,
+        "New_Zealand": 1107,
+        "Guam": 136,
+        "French_Polynesia": 56,
+        "Fiji": 18,
+        "New_Caledonia": 18,
+        "Northern_Mariana_Islands": 14,
+        "Papua_New_Guinea": 7
+    },
+    "Top_Infection": {
+        "Guam": 0.08,
+        "Australia": 0.03,
+        "French_Polynesia": 0.02,
+        "New_Zealand": 0.02,
+        "Northern_Mariana_Islands": 0.02,
+        "New_Caledonia": 0.01,
+        "Fiji": 0.0,
+        "Papua_New_Guinea": 0.0
+    },
+    "Top_Mortality": {
+        "Northern_Mariana_Islands": 14.29,
+        "Guam": 3.68,
+        "New_Zealand": 1.17,
+        "Australia": 1.07,
+        "Fiji": 0.0,
+        "French_Polynesia": 0.0,
+        "New_Caledonia": 0.0,
+        "Papua_New_Guinea": 0.0
+    }
+}
