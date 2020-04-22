@@ -15,7 +15,59 @@ We use MapReduce design patterns to analyze Covid19 data.
 ```bash
    python3 covid19/main.py data/covid19.json > data/output.json
 ```
-
+4. Example of output [data/world.json](data/world.json)
+```json
+{
+    "Top_Deaths": {
+        "United_States_of_America": 42539,
+        "Italy": 24114,
+        "Spain": 20852,
+        "France": 20265,
+        "United_Kingdom": 16509,
+        "Belgium": 5828,
+        "Iran": 5209,
+        "China": 4636,
+        "Germany": 4598,
+        "Netherlands": 3751
+    },
+    "Top_Cases": {
+        "United_States_of_America": 787752,
+        "Spain": 200210,
+        "Italy": 181228,
+        "Germany": 143457,
+        "United_Kingdom": 124743,
+        "France": 114657,
+        "Turkey": 90980,
+        "China": 83849,
+        "Iran": 83505,
+        "Russia": 47121
+    },
+    "Top_Infection": {
+        "Cases_on_an_international_conveyance_Japan": 23.2,
+        "San_Marino": 1.37,
+        "Andorra": 0.93,
+        "Holy_See": 0.9,
+        "Luxembourg": 0.59,
+        "Iceland": 0.5,
+        "Spain": 0.43,
+        "Gibraltar": 0.39,
+        "Faroe_Islands": 0.38,
+        "Guernsey": 0.38
+    },
+    "Top_Mortality": {
+        "British_Virgin_Islands": 20.0,
+        "France": 17.67,
+        "Burundi": 16.67,
+        "Nicaragua": 15.38,
+        "Sint_Maarten": 14.71,
+        "Belgium": 14.58,
+        "Mauritania": 14.29,
+        "Northern_Mariana_Islands": 14.29,
+        "Algeria": 14.13,
+        "Bahamas": 14.06
+    }
+}
+```
 ### Dataset
 Covid19 - [ECDC](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide)
 
