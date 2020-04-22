@@ -1,30 +1,27 @@
 # Covid19 mapper
 
 class Mapper:
-    def keyword_sum(self, data, keyword):
+    def map_continent(self, data, continent):
         '''
-        map (country, keyword) to (country, sum(keyword))
+        map and combine daily records for each country
         '''
-        counts = []
+        country_records = []
+        ## Map all records according to countries [(country, record), [county, record]]
         for record in data:
-            country = record['countriesAndTerritories']
-            item = record[keyword]
-            counts.append((country, item))
-        
-        mapped = {}
-        for k, v in counts:
-            if k not in mapped:
-                mapped[k] = int(v)
-            else:
-                mapped[k] = mapped[k] + int(v)
-        return mapped
+            if record['continentExp'] == continent:
+                country = record['countriesAndTerritories']
+                cases = record['cases']
+                deaths = record ['deaths']
+                population = record['popData2018']
+                country_records.append((country, record))
 
-    def keyword_filter(self, data, keyword, value):
-        '''
-        filter record only while keyword = value
-        '''
-        counts = []
-        for record in data:
-            if record[keyword] == value:
-                counts.append(record)
-        return counts
+        country_combined = {}
+
+        for country, record in country_records:
+            if country not in country_combined.keys():
+                country_combined[country] = [record]
+            else:
+                country_combined[country].append(record)
+
+        return country_combined
+        

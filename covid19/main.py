@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 # download covid19 data: wget https://opendata.ecdc.europa.eu/covid19/casedistribution/json/ -O data/covid19.json
-# python3 covid19/main.py data/covid19.json > data/output.json
+# python3 covid19/main.py data/main.json > data/output.json
 
 import sys
 import json
@@ -8,53 +8,33 @@ import json
 from mapper import Mapper
 from reducer import Reducer
 
-def top_sum(data, keyword, top=10):
-    '''
-    Top sum for keyword 
-    '''
-    mapper = Mapper()
-    mapped = mapper.keyword_sum(data, keyword)
-
-    #print(f'mapped: {mapped}')
-
-    reducer = Reducer()
-    reduced = reducer.sort(mapped)
-
-    #print(f'reduced {reduced}')
-
-    if len(reduced) < top:
-        return reduced
-    else:
-        return reduced[:top]
-
-def query_country(data, keyword, value):
-
-    '''
-    One country data 
-    '''
-    mapper = Mapper()
-    mapped = mapper.keyword_filter(data, keyword, value)
-
-    #print(f'mapped: {mapped}')
-
-    reducer = Reducer()
-    reduced = reducer.country_reduce(mapped)
-
-    #print(f'reduced {reduced}')
-    return reduced
-
 
 if __name__ == "__main__":
     input_file = sys.argv[1]
     with open(input_file) as reader:
         all_data = json.loads(reader.read())
         data = all_data['records']
-    top_20 = top_sum(data, 'deaths',20)
-
-    output = {}
-    for country, death in top_20:
-        stats = query_country(data, 'countriesAndTerritories', country)
-        output[country] = stats
     
-    output_json = json.dumps(output, indent=4)
+    # mapped to country
+
+    mapper = Mapper()
+    country_data = mapper.map_continent(data,'Europe')
+    
+    # get stats of each country
+    reducer = Reducer()
+    country_stats = reducer.get_country_stats(country_data)
+    country_deaths_counts, country_cases_counts, country_mortality_counts, country_infection_counts = reducer.slice_country_stats(country_stats)
+
+    # sort the data
+    final_result = {}
+    sorted_deaths = reducer.sort(country_deaths_counts)
+    final_result['Top_Deaths'] = sorted_deaths[:10]
+    sorted_cases = reducer.sort(country_cases_counts)
+    final_result['Top_Cases'] = sorted_cases[:10]
+    sorted_infection = reducer.sort(country_infection_counts)
+    final_result['Top_Infection'] = sorted_infection[:10]
+    sorted_mortality = reducer.sort(country_mortality_counts)
+    final_result['Top_Mortality'] = sorted_mortality[:10]
+
+    output_json = json.dumps(final_result, indent=4)
     print(output_json)
