@@ -68,6 +68,9 @@ We use MapReduce design patterns to analyze Covid19 data.
     }
 }
 ```
+### Result on web
+The code supports the web site - [ViewCovid19](https://covid19.mmmoxford.uk/)
+
 ### Dataset
 Covid19 - [ECDC](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide)
 
