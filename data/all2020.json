@@ -1,0 +1,50 @@
+{
+    "Top_Deaths": {
+        "United_States_of_America": 299177,
+        "Brazil": 181402,
+        "India": 143355,
+        "Mexico": 113953,
+        "Italy": 64520,
+        "United_Kingdom": 64170,
+        "France": 57911,
+        "Iran": 52196,
+        "Spain": 47624,
+        "Russia": 46941
+    },
+    "Top_Cases": {
+        "United_States_of_America": 16256754,
+        "India": 9884100,
+        "Brazil": 6901952,
+        "Russia": 2653928,
+        "France": 2376852,
+        "United_Kingdom": 1849403,
+        "Italy": 1843712,
+        "Spain": 1730575,
+        "Argentina": 1498160,
+        "Colombia": 1425774
+    },
+    "Top_Infection": {
+        "Andorra": 9.63,
+        "Luxembourg": 6.72,
+        "Montenegro": 6.66,
+        "San_Marino": 5.65,
+        "French_Polynesia": 5.59,
+        "Czechia": 5.46,
+        "Bahrain": 5.43,
+        "Belgium": 5.31,
+        "Armenia": 5.03,
+        "Qatar": 4.98
+    },
+    "Top_Mortality": {
+        "Yemen": 29.09,
+        "Mexico": 9.12,
+        "Montserrat": 7.69,
+        "Ecuador": 6.87,
+        "Isle_of_Man": 6.76,
+        "Sudan": 6.3,
+        "Bolivia": 6.13,
+        "Chad": 5.76,
+        "Egypt": 5.69,
+        "Syria": 5.65
+    }
+}
