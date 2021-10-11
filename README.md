@@ -13,7 +13,7 @@ We use MapReduce design patterns to analyze Covid19 data.
 ```
 3. Run script
 ```bash
-   python3 covid19/main.py data/covid19.json > data/output.json
+   python3 covid19/main.py data/covid19.json all > data/output.json
 ```
 4. Example of output [data/world.json](data/world.json)
 ```json

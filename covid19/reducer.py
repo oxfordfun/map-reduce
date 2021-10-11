@@ -22,8 +22,8 @@ class Reducer:
         for record in records:            
             deaths = int(record['deaths'])
             cases = int(record['cases'])
-            if len(record['popData2018']) > 0:
-                population = int(record['popData2018'])
+            if record['popData2019']:
+                population = int(record['popData2019'])
             else:
                 population = 1000000000
             date_record = datetime.datetime.strptime(record['dateRep'], "%d/%m/%Y").date()

@@ -17,7 +17,7 @@ class Mapper:
             "countriesAndTerritories": "United_Kingdom",
             "geoId": "UK",
             "countryterritoryCode": "GBR",
-            "popData2018": "66488991",
+            "popData2019": "66488991",
             "continentExp": "Europe"
         }
         
