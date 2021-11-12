@@ -8,7 +8,7 @@ We use MapReduce design patterns to analyze Covid19 data.
 ```
 2. Get data
 ```bash
-   cd map_reduce
+   cd map-reduce
    wget https://opendata.ecdc.europa.eu/covid19/casedistribution/json/ -O data/covid19.json
 ```
 3. Run script
